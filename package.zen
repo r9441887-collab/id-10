@@ -1,0 +1,20 @@
+# Zenith package id:10 — Complex Fibonacci Program
+# Repository: github.com/id/10
+# Install: zenith pkg install id:10
+# Usage in project: use 10  (or id:10 depending on naming)
+
+app console
+
+func fibonacci(n: int) -> int
+    if n <= 1
+        return n
+    end
+    return fibonacci(n - 1) + fibonacci(n - 2)
+end
+
+func main() -> int
+    var result: int = fibonacci(10)
+    print("fibonacci(10) = ")
+    print(result)
+    return 0
+end
